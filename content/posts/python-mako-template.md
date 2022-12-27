@@ -1,6 +1,10 @@
 ---
 date: 2009-11-10
 title: Python Mako Template 学习笔记
+
+tags:
+- Python
+
 ---
 
 Mako是什么？Moko是Python写的一个模板库，Python官网[http://python.org/](http://python.org/)用的就是它哦。其他废话也就不累赘了，直接来点代码，方便阅读与了解把。

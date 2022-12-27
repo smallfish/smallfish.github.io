@@ -1,6 +1,11 @@
 ---
 date: 2012-02-08
 title: Nginx-Lua HTTP 401 认证校验
+
+tags:
+- Nginx
+- Lua
+
 ---
 
 本文示例依赖模块：

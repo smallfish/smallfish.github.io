@@ -1,6 +1,11 @@
 ---
 date: 2009-12-15
 title: Apache Mod_Perl实现 URL Rewrite
+
+tags:
+- Apache
+- Perl
+
 ---
 
 相信apache的mod_rewrite模块都很熟悉了，今天这儿换个思路，利用mod_perl来实现下，发现竟然是如此的简单！

@@ -1,6 +1,11 @@
 ---
 date: 2009-11-10
 title: Google App Engine 上试用 web.py 笔记
+
+tags:
+- Python
+- Webpy
+
 ---
 
 看到有人在坛子里询问在GAE如何发布web.py有关问题，就尝试了一把。具体安装和使用过程如下，请对照自己本地路径相应修改：

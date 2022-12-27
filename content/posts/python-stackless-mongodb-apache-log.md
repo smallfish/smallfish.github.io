@@ -1,6 +1,10 @@
 ---
 date: 2010-03-04
 title: Python(Stackless) + MongoDB Apache 日志(2G)分析
+
+tags:
+- Python
+
 ---
 
 为何选择Stackless？ [http://www.stackless.com](http://www.stackless.com)

@@ -1,6 +1,10 @@
 ---
 date: 2010-03-27
 title: Nginx 启动/重启脚本笔记
+
+tags:
+- Nginx
+
 ---
 
 Nginx本身可以通过

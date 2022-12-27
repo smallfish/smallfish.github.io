@@ -1,6 +1,10 @@
 ---
 date: 2009-11-10
 title: Python MySQLdb 查询返回字典结构
+
+tags:
+- Python
+
 ---
 
 MySQLdb默认查询结果都是返回tuple，输出时候不是很方便，必须按照0，1这样读取，无意中在网上找到简单的修改方法，就是传递一个cursors.DictCursor就行。

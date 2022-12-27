@@ -1,6 +1,12 @@
 ---
 date: 2012-11-25
 title: lua-resty-beanstalkd 模块教程
+
+tags:
+- Lua
+- Nginx
+- Beanstalkd
+
 ---
 
 本文涉及几个名词：

@@ -1,6 +1,10 @@
 ---
 date: 2010-06-30
 title: Pylons 入门实例教程 – 表单和文件上传
+
+tags:
+- Python
+
 ---
 
 继续上一篇《[Pylons 入门实例教程 - Hello](http://chenxiaoyu.org/2010/06/28/pylons-tutorial-hello.html)》，现在开始讲在 Pylons 里如何提交表单和上传文件。

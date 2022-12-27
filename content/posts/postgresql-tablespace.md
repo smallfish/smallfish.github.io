@@ -1,6 +1,10 @@
 ---
 date: 2009-12-22
 title: PostgreSQL tablespace 表空间
+
+tags:
+- PostgreSQL
+
 ---
 
 pgsql允许管理员在文件系统里定义表空间存储位置，这样创建数据库对象时候就可以引用这个表空间了。好处就不用多说了，可以把数据库对象存储到不同的分区上，比如更好的存储之类。默认initdb之后会有两个表空间pg_global和pg_default。

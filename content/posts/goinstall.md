@@ -1,6 +1,11 @@
 ---
 date: 2010-05-30
 title: Go 语言模块安装工具：goinstall
+
+tags:
+- Golang
+- Go
+
 ---
 
 <img src="http://golang.org/doc/logo-153x55.png" alt="" />

@@ -1,6 +1,10 @@
 ---
 date: 2009-11-20
 title: Pysvn 程序员指南
+
+tags:
+- Python
+
 ---
 
 这是一篇关于pysvn模块的指南.

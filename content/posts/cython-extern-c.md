@@ -1,6 +1,11 @@
 ---
 date: 2010-05-30
 title: Cython 教程 - 调用外部C语言函数
+
+tags:
+- Python
+- Cython
+
 ---
 
 一般情况完全可以在 Python 里导入 from math import sin 然后调用 sin() 函数。然而，调用C里面的 sin() 函数速度会更快，尤其在复杂的循环里。在 Cython 里可以这样声明和使用：

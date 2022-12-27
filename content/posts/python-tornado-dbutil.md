@@ -1,6 +1,10 @@
 ---
 date: 2009-12-01
 title: tornado.database添加PooledDB连接池功能
+
+tags:
+- Python
+
 ---
 
 tornado.database模块简单包装了下对MySQL的操作，短小精悍。

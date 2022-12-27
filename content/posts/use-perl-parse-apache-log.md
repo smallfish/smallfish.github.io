@@ -1,6 +1,10 @@
 ---
 date: 2009-12-15
 title: 使用 Perl 快速解析 Apache Log
+
+tags:
+- Perl
+
 ---
 
 功能简述

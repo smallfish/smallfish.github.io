@@ -1,6 +1,10 @@
 ---
 date: 2014-12-26
 title: Docker Volume 属主设置
+
+tags:
+- Docker
+
 ---
 
 最近在测试 Volume 挂载时候有点问题，描述如下：

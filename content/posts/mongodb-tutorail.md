@@ -1,6 +1,10 @@
 ---
 date: 2010-04-27
 title: 【译】MongoDB 入门教程
+
+tags:
+- MongoDB
+
 ---
 
 原文参见：[http://www.mongodb.org/display/DOCS/Tutorial](http://www.mongodb.org/display/DOCS/Tutorial)

@@ -1,6 +1,10 @@
 ---
 date: 2009-12-16
 title: Java调用Linux SCP操作
+
+tags:
+- Linux
+
 ---
 
 先来回顾下linux下scp命令的用法：

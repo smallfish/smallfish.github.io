@@ -1,6 +1,10 @@
 ---
 date: 2009-12-15
 title: Apache 虚拟主机配置笔记
+
+tags:
+- Apache
+
 ---
 
 环境：Linux Apache2.2 （路径 /usr/local/apache）

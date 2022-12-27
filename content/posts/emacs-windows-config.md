@@ -1,6 +1,10 @@
 ---
 date: 2009-12-10
 title: emacs windows配置笔记
+
+tags:
+- Emacs
+
 ---
 
 俺最新.emcas配置地址是：[http://github.com/smallfish/editor/blob/master/emacs/.emacs](http://github.com/smallfish/editor/blob/master/emacs/.emacs)

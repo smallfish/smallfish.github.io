@@ -1,6 +1,11 @@
 ---
 date: 2009-12-15
 title: Pexpect通过SSH执行远程命令
+
+tags:
+- Linux
+- Python
+
 ---
 
 pexpect是python一个模块，可以通过：easy_install pexpect 来安装。

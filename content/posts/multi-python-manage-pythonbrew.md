@@ -1,6 +1,10 @@
 ---
 date: 2011-04-03
 title: pythonbrew - Python多版本管理利器
+
+tags:
+- Python
+
 ---
 
 相信不少人在自己机器上有多个Python版本，我的机器上Python有四个版本：2.5.x、2.6.x、2.7和stackless。

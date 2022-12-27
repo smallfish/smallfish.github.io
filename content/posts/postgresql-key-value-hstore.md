@@ -1,6 +1,10 @@
 ---
 date: 2011-02-19
 title: PostgreSQL Key-Value 数据类型 hstore 使用教程
+
+tags:
+- PostgreSQL
+
 ---
 
 现在满地都是KV数据库的文字，PostgreSQL 也有类似的结构。不过是通过其强大的扩展方式实现的。

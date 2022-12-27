@@ -1,6 +1,10 @@
 ---
 date: 2009-12-08
 title: 使用Git维护你的网站
+
+tags:
+- Git
+
 ---
 
 <img class="alignnone size-full wp-image-92" title="git-tree" src="http://chenxiaoyu.org/wp-content/uploads/2009/12/git-tree.gif" alt="git-tree" width="263" height="316" />

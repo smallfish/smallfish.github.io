@@ -1,6 +1,10 @@
 ---
 date: 2011-10-30
 title: Nginx 第三方模块试用记
+
+tags:
+- Nginx
+
 ---
 
 最近试用了几个[@agentzh](http://weibo.com/agentzh)写的第三方[Nginx](http://nginx.net)模块，甚为愉悦，没想到在Nginx可以玩很多技巧和扩展，分享一下。

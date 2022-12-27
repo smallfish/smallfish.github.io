@@ -1,6 +1,10 @@
 ---
 date: 2010-06-02
 title: PostgreSQL COPY 导入/导出数据
+
+tags:
+- PostgreSQL
+
 ---
 
 COPY 命令可以快速的导入数据到 PostgreSQL 中，文件格式类似CVS之类。适合批量导入数据，比 \i 和恢复数据表快。

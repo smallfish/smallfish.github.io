@@ -1,6 +1,10 @@
 ---
 date: 2009-12-15
 title: mysqldumpslow 慢查询日志分析工具
+
+tags:
+- MySQL
+
 ---
 
 mysql自带的这个玩意挺好使的，可以对慢查询里的sql进行排序、计算等操作。

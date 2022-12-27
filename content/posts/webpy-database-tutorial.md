@@ -1,6 +1,11 @@
 ---
 date: 2010-03-19
 title: web.py 数据库操作指南
+
+tags:
+- Python
+- Webpy
+
 ---
 
 官网地址：[http://webpy.org/](http://webpy.org/)

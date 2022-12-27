@@ -1,6 +1,11 @@
 ---
 date: 2012-03-14
 title: 如何编写 Go 程序（最新版）
+
+tags:
+- Golang
+- Go
+
 ---
 
 官网文档（weekly）：[http://weekly.golang.org/doc/code.html](http://weekly.golang.org/doc/code.html)

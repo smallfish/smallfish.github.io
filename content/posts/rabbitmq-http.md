@@ -1,6 +1,10 @@
 ---
 date: 2013-03-28
 title: RabbitMQ REST API
+
+tags:
+- RabbitMQ
+
 ---
 
 最近造了一个轮子：[rabbitmq-http](https://github.com/smallfish/rabbitmq-http)，源于内部项目的一个翻版。基于 [Go](http://golang.org) 语言实现。

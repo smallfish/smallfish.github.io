@@ -1,6 +1,10 @@
 ---
 date: 2010-04-19
 title: Python ConfigParser 与 ConfigObj INI 配置读写顺序
+
+tags:
+- Python
+
 ---
 
 默认的ConfigParser对于选项是按照字母顺序排列的。如下代码：

@@ -1,6 +1,10 @@
 ---
 date: 2009-12-15
 title: Memcached Java/Python Client API 共享
+
+tags:
+- Memcached
+
 ---
 
 用Python写了一个计划任务，定时更新Memcached中一个key值，写的很happy，几分钟搞定。

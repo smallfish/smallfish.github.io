@@ -1,6 +1,10 @@
 ---
 date: 2011-05-31
 title:  supervisor - Python进程管理工具
+
+tags:
+- Python
+
 ---
 
 经常会碰到要写一些守护进程，简单做法放入后台：

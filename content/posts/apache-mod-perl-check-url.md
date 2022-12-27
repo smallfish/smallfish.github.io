@@ -1,6 +1,11 @@
 ---
 date: 2009-12-15
 title: Apache Mod_Perl 防盗链
+
+tags:
+- Apache
+- Perl
+
 ---
 
 大体思路是这样的，比如有 一个地址：http://www.aa.com/down/1.mp3，不幸搜索引擎或者迅雷扒到了，就无偿为他们奉献流量了。 但是假如在http://www.aa.com/down/1.mp3?key=123，key参数每天变化或者几分钟变化一次，在apache服务端校 验下这个参数，不正确则显示拒绝访问或者找不到的话，那样防盗链的效果就算达到了把。

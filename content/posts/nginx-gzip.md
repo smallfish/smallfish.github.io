@@ -1,6 +1,10 @@
 ---
 date: 2012-03-08
 title: Nginx GZip 压缩
+
+tags:
+- Nginx
+
 ---
 
 Nginx GZip 模块文档详见：[http://wiki.nginx.org/HttpGzipModule](http://wiki.nginx.org/HttpGzipModule)

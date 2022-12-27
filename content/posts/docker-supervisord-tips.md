@@ -3,8 +3,8 @@ date: 2017-12-12
 title: docker supervisord 管理多进程的一些建议
 
 tags:
-- docker
-- supervisord
+- Docker
+- Supervisord
 
 ---
 

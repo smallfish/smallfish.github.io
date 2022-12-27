@@ -1,6 +1,10 @@
 ---
 date: 2009-11-10
 title: Python MySQL 库安装笔记
+
+tags:
+- Python
+
 ---
 
 其实MySQL-python安装很简直，以前一直也没在意，今天发觉换了1.2.3新版本，ms蹦出很多问题来了。

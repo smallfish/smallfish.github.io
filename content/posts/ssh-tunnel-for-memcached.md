@@ -1,6 +1,11 @@
 ---
 date: 2009-12-15
 title: SSH Tunnel Memcached
+
+tags:
+- Linux
+- SSH
+
 ---
 
 最近一台服务器放进了移动机房，需要访问原电信机房一台Memcached服务器，Memcached服务是以内网形式启动。

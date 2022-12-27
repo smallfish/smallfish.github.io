@@ -1,6 +1,10 @@
 ---
 date: 2013-11-28
 title: PostgreSQL ARRAY 数据类型
+
+tags:
+- PostgreSQL
+
 ---
 
 刚好手头有一个需求，是涉及到数组类型的，懒的插入多条数据库记录，想起了ARRAY数据类型。

@@ -1,6 +1,10 @@
 ---
 date: 2009-11-16
 title: MySQL Query Profile 简单使用
+
+tags:
+- MySQL
+
 ---
 
 MySQL Query Profile MySQL 5.0.37 以上开始支持 MySQL Query Profiler, 可以查询到此 SQL 会执行多少时间, 并看出 CPU/Memory 使用量, 执行过程中 System lock, Table lock 花多少时间等等.

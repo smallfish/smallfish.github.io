@@ -1,6 +1,10 @@
 ---
 date: 2009-12-22
 title: PostgreSQL Partitioning 表分区
+
+tags:
+- PostgreSQL
+
 ---
 
 测试版本：pg 8.3 (ubuntu)

@@ -3,7 +3,8 @@ date: 2015-01-17
 title: Go flag/kingpin 命令行解析多个同名参数
 
 tags:
-- golang
+- Golang
+- Go
 
 ---
 

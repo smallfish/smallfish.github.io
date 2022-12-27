@@ -3,7 +3,7 @@ date: "2022-12-27"
 title: covid-19
 
 tags:
-- covid
+- Covid
 
 ---
 

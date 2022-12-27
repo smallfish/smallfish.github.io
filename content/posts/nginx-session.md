@@ -1,6 +1,10 @@
 ---
 date: 2011-11-09
 title: Nginx Session 模块
+
+tags:
+- Nginx
+
 ---
 上一篇[《Nginx第三方模块》](http://chenxiaoyu.org/2011/10/30/nginx-modules.html)涉及了数据库、Memcached以及Lua的扩展，但是相对于Web开发是不是还缺点什么呢？答案是回话（Session）模块。
 

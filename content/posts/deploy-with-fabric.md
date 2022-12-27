@@ -1,6 +1,11 @@
 ---
 date: 2012-08-30
 title: Fabric 部署工具
+
+tags:
+- Python
+- Fabric
+
 ---
 
 Fabric 是基于 SSH 协议的 Python 工具，相比传统的 ssh/scp 方式，用 Python 的语法写管理命令更易读也更容易扩展，管理单台或者多台机器犹如本地操作一般。

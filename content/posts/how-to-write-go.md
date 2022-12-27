@@ -1,6 +1,11 @@
 ---
 date: 2010-06-29
 title: 如何写 Go 代码？
+
+tags:
+- Golang
+- Go
+
 ---
 
 原文：[http://golang.org/doc/code.html](http://golang.org/doc/code.html)

@@ -1,6 +1,10 @@
 ---
 date: 2009-12-16
 title: 修改 ModPython 下 PYTHON_EGG_CACHE 报错
+
+tags:
+- Python
+
 ---
 
 环境：Linux Apache Python(mod_python)

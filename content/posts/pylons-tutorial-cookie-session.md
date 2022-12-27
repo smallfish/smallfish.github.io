@@ -1,6 +1,10 @@
 ---
 date: 2010-07-03
 title: Pylons 入门实例教程 – cookie 和 session
+
+tags:
+- Python
+
 ---
 
 本篇讲述在 Pylons 里使用 cookie 和 session。

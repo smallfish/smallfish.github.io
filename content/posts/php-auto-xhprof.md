@@ -1,6 +1,10 @@
 ---
 date: 2011-09-15
 title: auto-xhprof PHP自动性能测试工具
+
+tags:
+- PHP
+
 ---
 
 auto-xhprof 项目地址： [https://github.com/smallfish/auto-xhprof](https://github.com/smallfish/auto-xhprof)

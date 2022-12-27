@@ -1,6 +1,10 @@
 ---
 date: 2009-11-17
 title: Win Python Pyrex 扩展
+
+tags:
+- Python
+
 ---
 
 在偶的ubuntu里编写pyrex程序编译成so还是挺爽的，用 timeit.Timer 测试性能提升不少，今天在windows也尝试了一番。

@@ -1,6 +1,10 @@
 ---
 date: 2012-12-19
 title: RabbitMQ trace 日志调试
+
+tags:
+- RabbitMQ
+
 ---
 
 RabbitMQ 默认日志里只有类似客户端“accpet/close”等信息，对于有异常或者跟踪消息内部结构就比较麻烦了。

@@ -1,6 +1,10 @@
 ---
 date: 2010-02-05
 title: MySQL/PostgreSQL小命令对比
+
+tags:
+- PostgreSQL
+
 ---
 
 对比下一些两个数据库常用的操作。分别使用自带的client程序。

@@ -1,6 +1,11 @@
 ---
 date: 2012-01-04
 title: Nginx-Lua过滤POST请求
+
+tags:
+- Nginx
+- Lua
+
 ---
 
 注：此文章会持续更新

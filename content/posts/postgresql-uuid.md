@@ -1,6 +1,10 @@
 ---
 date: 2010-02-26
 title: PostgreSQL UUID 函数
+
+tags:
+- PostgreSQL
+
 ---
 
 测试环境：PostgreSQL 8.4

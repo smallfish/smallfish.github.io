@@ -3,13 +3,10 @@ date: 2018-01-18
 title: wrk 使用
 
 tags:
-- wrk
-- linux
+- Linux
+- Wrk
 
 ---
-
-
-
 
 wrk 使用小记，备忘用
 

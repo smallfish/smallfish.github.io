@@ -1,6 +1,10 @@
 ---
 date: 2014-07-25
 title: PostgreSQL JSON 数据类型
+
+tags:
+- PostgreSQL
+
 ---
 
 从PostgreSQL 9.3版本开始，JSON已经成为内置数据类型，“一等公民”啦。

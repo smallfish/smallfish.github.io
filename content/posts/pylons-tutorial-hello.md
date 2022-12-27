@@ -1,6 +1,10 @@
 ---
 date: 2010-06-28
 title: Pylons 入门实例教程 - Hello
+
+tags:
+- Python
+
 ---
 
 [http://pylonshq.com/](http://pylonshq.com/)，当然，这些组件只是默认，你还可以根据自己喜好来选择其他组件，比如你可以采用 Jinja2 或 Genshi 模板，ORM也可以采用 SQLObject。完全是自由组合。

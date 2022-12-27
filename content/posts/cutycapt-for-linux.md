@@ -1,6 +1,10 @@
 ---
 date: 2011-02-19
 title: 开源网页截屏工具 CutyCapt Linux 下安装和使用
+
+tags:
+- Linux
+
 ---
 
 目的是想在服务器端生成某个网页的缩略图。Google了好久，发现一个好开源东西：CutyCapt。

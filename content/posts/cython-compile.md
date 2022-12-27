@@ -1,6 +1,11 @@
 ---
 date: 2009-11-19
 title: Cython参考指南 - 编译
+
+tags:
+- Python
+- Cython
+
 ---
 
 Cython代码跟Python不一样，必须要编译。

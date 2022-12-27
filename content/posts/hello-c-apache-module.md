@@ -1,6 +1,11 @@
 ---
 date: 2009-12-16
 title: C Apache Module 开发入门
+
+tags:
+- C
+- Apache
+
 ---
 
 前言：

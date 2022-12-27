@@ -1,6 +1,11 @@
 ---
 date: 2014-11-06
 title: 翻译-如何组织Go代码
+
+tags:
+- Golang
+- Go
+
 ---
 
 原文地址：[http://talks.golang.org/2014/organizeio.slide](http://talks.golang.org/2014/organizeio.slide)，译文尽量贴近原文，会适当的增删，勿拍。

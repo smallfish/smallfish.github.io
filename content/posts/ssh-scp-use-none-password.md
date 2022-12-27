@@ -1,6 +1,11 @@
 ---
 date: 2009-12-16
 title: SSH, SCP 不输入密码
+
+tags:
+- Linux
+- SSH
+
 ---
 
 经常在不同linux机器之间互相scp拷文件，每次总是要输入密码才可行。

@@ -1,6 +1,10 @@
 ---
 date: 2010-02-06
 title: PostgreSQL RPM 安装笔记
+
+tags:
+- PostgreSQL
+
 ---
 
 测试环境：REHL 5.3
