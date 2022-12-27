@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog // smallfish</title>
+    <link>/</link>
+    <description>Recent content on blog // smallfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 27 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>covid-19</title>
+      <link>/2022/12/27/covid-19/</link>
+      <pubDate>Tue, 27 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/12/27/covid-19/</guid>
+      <description>新冠 covid 中招碎碎帐</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wrk 使用</title>
+      <link>/2018/01/18/wrk-tips/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/18/wrk-tips/</guid>
+      <description>wrk 使用小记，备忘用</description>
+    </item>
+    
+    <item>
+      <title>docker supervisord 管理多进程的一些建议</title>
+      <link>/2017/12/12/docker-supervisord-tips/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/12/docker-supervisord-tips/</guid>
+      <description>上一次提到 supervisord 还是 2011 年 python supervisor 这里再补充一篇，基本上是这几年在 docker 里面的一些用法和建议。在容器里面是不太建议里面跑多个进程（服务）的玩法，但是有的时候实际业务在所难免</description>
+    </item>
+    
+    <item>
+      <title>Go flag/kingpin 命令行解析多个同名参数</title>
+      <link>/2015/01/17/go-flag-multiple-values/</link>
+      <pubDate>Sat, 17 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/01/17/go-flag-multiple-values/</guid>
+      <description>想了半天标题应该怎么写，都不太好表达，要的效果如下：
+xx --name=aa --name=bb 需要解析出 name 参数，默认 flag 解析后返回的是最后一个值，即：bb</description>
+    </item>
+    
+    <item>
+      <title>Docker Volume 属主设置</title>
+      <link>/2014/12/26/docker-volume-chown/</link>
+      <pubDate>Fri, 26 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/12/26/docker-volume-chown/</guid>
+      <description>最近在测试 Volume 挂载时候有点问题，描述如下：</description>
+    </item>
+    
+    <item>
+      <title>翻译-如何组织Go代码</title>
+      <link>/2014/11/06/organizing-go-code/</link>
+      <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/11/06/organizing-go-code/</guid>
+      <description>原文地址：http://talks.golang.org/2014/organizeio.slide，译文尽量贴近原文，会适当的增删，勿拍。
+包</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL JSON 数据类型</title>
+      <link>/2014/07/25/postgresql-json/</link>
+      <pubDate>Fri, 25 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/07/25/postgresql-json/</guid>
+      <description>从PostgreSQL 9.3版本开始，JSON已经成为内置数据类型，“一等公民”啦。</description>
+    </item>
+    
+    <item>
+      <title>Test::Nginx 模块介绍</title>
+      <link>/2013/12/04/test-nginx/</link>
+      <pubDate>Wed, 04 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/12/04/test-nginx/</guid>
+      <description>先说句题外话，Perl的测试模块那真是相当的爽，不仅可以爽到无与伦比的正则，还可以对测试用例自由组合、乱序运行等等。
+Perl测试模块大概有如下：</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL ARRAY 数据类型</title>
+      <link>/2013/11/28/postgresql-array/</link>
+      <pubDate>Thu, 28 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/11/28/postgresql-array/</guid>
+      <description>刚好手头有一个需求，是涉及到数组类型的，懒的插入多条数据库记录，想起了ARRAY数据类型。
+官方文档参考：</description>
+    </item>
+    
+    <item>
+      <title>我的第一次马拉松（近期跑步总结）</title>
+      <link>/2013/11/03/hangzhou-malasong/</link>
+      <pubDate>Sun, 03 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/11/03/hangzhou-malasong/</guid>
+      <description>今年博客写的相当少，今天再来一篇非技术内容吧，源于今天刚好跑完了杭州马拉松（半马）。今年7月份开始计划跑步，从最初的4圈就气喘吁吁快跪的样子，一步一步的熬到现在可以轻松跑完10公里，当然仅仅是慢跑的水平。
+凭着一时冲动报名了半马（21km），虽然在规定的时间（3小时）内跑完，还是觉得跟自己最初的目标有点差距来着，原计划2小时跑完，结果跑完已经超过20多分钟。不过也是有原因的，简单总结一下吧。</description>
+    </item>
+    
+    <item>
+      <title>Python Testing</title>
+      <link>/2013/09/12/python-testing/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/09/12/python-testing/</guid>
+      <description>代码写多了越发觉得测试的重要性，之前一直喜欢“目测”的做法已经不值得推荐了。当然，这只是一个玩笑。
+在Python代码里测试大概有这么几种：doctest、unittest和nose（第三方工具）。</description>
+    </item>
+    
+    <item>
+      <title>Python Profile 工具性能分析</title>
+      <link>/2013/08/28/python-profile/</link>
+      <pubDate>Wed, 28 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/08/28/python-profile/</guid>
+      <description>最近碰到“程序速度大大降低”的说法，还是直接用数据说明比较有信服力，以及可以找出真正问题所在。
+Python自带了几个性能分析的模块：profile、cProfile和hotshot，使用方法基本都差不多，无非模块是纯Python还是用C写的。</description>
+    </item>
+    
+    <item>
+      <title>RabbitMQ REST API</title>
+      <link>/2013/03/28/rabbitmq-http/</link>
+      <pubDate>Thu, 28 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/03/28/rabbitmq-http/</guid>
+      <description>最近造了一个轮子：rabbitmq-http，源于内部项目的一个翻版。基于 Go 语言实现。</description>
+    </item>
+    
+    <item>
+      <title>RabbitMQ trace 日志调试</title>
+      <link>/2012/12/19/rabbitmq-trace/</link>
+      <pubDate>Wed, 19 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/12/19/rabbitmq-trace/</guid>
+      <description>RabbitMQ 默认日志里只有类似客户端“accpet/close”等信息，对于有异常或者跟踪消息内部结构就比较麻烦了。</description>
+    </item>
+    
+    <item>
+      <title>Go 模块测试</title>
+      <link>/2012/12/07/golang-module-test-benchmark/</link>
+      <pubDate>Fri, 07 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/12/07/golang-module-test-benchmark/</guid>
+      <description>Go 很多地方都透露着“约定大于配置”的理论，比如测试、可见性、语法等等。</description>
+    </item>
+    
+    <item>
+      <title>lua-resty-beanstalkd 模块教程</title>
+      <link>/2012/11/25/lua-resty-beanstalkd/</link>
+      <pubDate>Sun, 25 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/11/25/lua-resty-beanstalkd/</guid>
+      <description>本文涉及几个名词：
+ngx_lua http://wiki.</description>
+    </item>
+    
+    <item>
+      <title>LuaJIT FFI 调用 Curl 示例</title>
+      <link>/2012/10/11/luajit-ffi-curl-example/</link>
+      <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/10/11/luajit-ffi-curl-example/</guid>
+      <description>LuaJIT 是一个好东西，比官方 Lua 解释器性能上提升很多。ngx_lua/ngx_openresty 都推荐用 LuaJIT 来加速 Lua 代码。</description>
+    </item>
+    
+    <item>
+      <title>Fabric 部署工具</title>
+      <link>/2012/08/30/deploy-with-fabric/</link>
+      <pubDate>Thu, 30 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/08/30/deploy-with-fabric/</guid>
+      <description>Fabric 是基于 SSH 协议的 Python 工具，相比传统的 ssh/scp 方式，用 Python 的语法写管理命令更易读也更容易扩展，管理单台或者多台机器犹如本地操作一般。</description>
+    </item>
+    
+    <item>
+      <title>如何编写 Go 程序（最新版）</title>
+      <link>/2012/03/14/howto-write-golang-code/</link>
+      <pubDate>Wed, 14 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/03/14/howto-write-golang-code/</guid>
+      <description>官网文档（weekly）：http://weekly.golang.org/doc/code.html
+中文版（旧版）：http://chenxiaoyu.org/2010/06/29/how-to-write-go.html</description>
+    </item>
+    
+    <item>
+      <title>Nginx GZip 压缩</title>
+      <link>/2012/03/08/nginx-gzip/</link>
+      <pubDate>Thu, 08 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/03/08/nginx-gzip/</guid>
+      <description>Nginx GZip 模块文档详见：http://wiki.</description>
+    </item>
+    
+    <item>
+      <title>Nginx-Lua HTTP 401 认证校验</title>
+      <link>/2012/02/08/nginx-lua-401-auth/</link>
+      <pubDate>Wed, 08 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/02/08/nginx-lua-401-auth/</guid>
+      <description>本文示例依赖模块：
+lua-nginx-module ngx_coolkit（获取$remote_passwd 输入值） 如何编译Nginx这些扩展模块，请参考以前《Nginx 第三方模块试用记》。</description>
+    </item>
+    
+    <item>
+      <title>Nginx-Lua过滤POST请求</title>
+      <link>/2012/01/04/nginx-lua-post-max/</link>
+      <pubDate>Wed, 04 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/01/04/nginx-lua-post-max/</guid>
+      <description>注：此文章会持续更新
+2012 来的几天关于Hash攻击的文章不断，基本语言级别的都收到影响。</description>
+    </item>
+    
+    <item>
+      <title>JSON 美化输出</title>
+      <link>/2011/11/24/json-format/</link>
+      <pubDate>Thu, 24 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/11/24/json-format/</guid>
+      <description>经常会碰到一些返回 JSON 格式的应用，默认都是一大坨字一起显示，完全是虐待自己的眼睛。</description>
+    </item>
+    
+    <item>
+      <title>Nginx Session 模块</title>
+      <link>/2011/11/09/nginx-session/</link>
+      <pubDate>Wed, 09 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/11/09/nginx-session/</guid>
+      <description>上一篇《Nginx第三方模块》涉及了数据库、Memcached以及Lua的扩展，但是相对于Web开发是不是还缺点什么呢？答案是回话（Session）模块。
+这里还是需要感谢一下@agentzh，已经封装好了encrypted-session模块。模块依赖ngx_devel_kit包。模块地址如下：</description>
+    </item>
+    
+    <item>
+      <title>Nginx 第三方模块试用记</title>
+      <link>/2011/10/30/nginx-modules/</link>
+      <pubDate>Sun, 30 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/10/30/nginx-modules/</guid>
+      <description>最近试用了几个@agentzh写的第三方Nginx模块，甚为愉悦，没想到在Nginx可以玩很多技巧和扩展，分享一下。
+本文尝试的几个模块大概分为：</description>
+    </item>
+    
+    <item>
+      <title>auto-xhprof PHP自动性能测试工具</title>
+      <link>/2011/09/15/php-auto-xhprof/</link>
+      <pubDate>Thu, 15 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/09/15/php-auto-xhprof/</guid>
+      <description>auto-xhprof 项目地址： https://github.</description>
+    </item>
+    
+    <item>
+      <title>supervisor - Python进程管理工具</title>
+      <link>/2011/05/31/python-supervisor/</link>
+      <pubDate>Tue, 31 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/05/31/python-supervisor/</guid>
+      <description>经常会碰到要写一些守护进程，简单做法放入后台：
+shell&amp;gt; nohup python xxx.</description>
+    </item>
+    
+    <item>
+      <title>pythonbrew - Python多版本管理利器</title>
+      <link>/2011/04/03/multi-python-manage-pythonbrew/</link>
+      <pubDate>Sun, 03 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/04/03/multi-python-manage-pythonbrew/</guid>
+      <description>相信不少人在自己机器上有多个Python版本，我的机器上Python有四个版本：2.5.x、2.6.x、2.7和stackless。
+测试Google App Engine时候需要切换到2.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL Key-Value 数据类型 hstore 使用教程</title>
+      <link>/2011/02/19/postgresql-key-value-hstore/</link>
+      <pubDate>Sat, 19 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/02/19/postgresql-key-value-hstore/</guid>
+      <description>现在满地都是KV数据库的文字，PostgreSQL 也有类似的结构。不过是通过其强大的扩展方式实现的。</description>
+    </item>
+    
+    <item>
+      <title>Pylons 入门实例教程 – 发布应用</title>
+      <link>/2011/02/19/pylons-tutorial-deploy-application/</link>
+      <pubDate>Sat, 19 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/02/19/pylons-tutorial-deploy-application/</guid>
+      <description>前面几篇教程简单讲述了如何使用 Pylons 进行 WEB 方面开发的步骤，包括简单的 Hello、表单和数据库操作等内容。本篇将描述一下如何在正式环境中发布基于 Pylons 的 WEB 应用。</description>
+    </item>
+    
+    <item>
+      <title>Python Story</title>
+      <link>/2011/02/19/python-story/</link>
+      <pubDate>Sat, 19 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/02/19/python-story/</guid>
+      <description>http://www.slideshare.net/nnfish/python-story
+http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=pythonstory-100920035248-phpapp01&amp;amp;stripped_title=python-story&amp;amp;userName=nnfish</description>
+    </item>
+    
+    <item>
+      <title>互联网产品与技术的那些杂事儿</title>
+      <link>/2011/02/19/web-application-and-tech/</link>
+      <pubDate>Sat, 19 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/02/19/web-application-and-tech/</guid>
+      <description>杂谈一下，我不是搞产品的也不是搞技术的，只是一个打杂的。随便扯谈一下。
+作为一个产品，既然有这个名称，必定有其定位。在构思之前，就必须有明确的针对人群。比如是针对年轻人（80、90），抑或者上班族等等。模糊与笼统的定位，带来的只是无谓的“探索”。定位不是靠摸索出来的，也不是磨打出来的，是在你的脑海里，在你的产品里。即使现在模仿风气如此浓厚的时候，需要的也是定位。你的定位在哪儿，注定成就怎样的结果。</description>
+    </item>
+    
+    <item>
+      <title>开源网页截屏工具 CutyCapt Linux 下安装和使用</title>
+      <link>/2011/02/19/cutycapt-for-linux/</link>
+      <pubDate>Sat, 19 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/02/19/cutycapt-for-linux/</guid>
+      <description>目的是想在服务器端生成某个网页的缩略图。Google了好久，发现一个好开源东西：CutyCapt。
+系统：CentOS 5.</description>
+    </item>
+    
+    <item>
+      <title>Pythonic 分享</title>
+      <link>/2010/08/07/pythonic-ppt/</link>
+      <pubDate>Sat, 07 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/08/07/pythonic-ppt/</guid>
+      <description>很荣幸收到龙哥 @hoorace 邀请去参加了杭州第四期程序员圆桌会议，顺带介绍了下最近在公司内部做的关于《Pythonic》分享。喜欢Python的可以下载看看把。</description>
+    </item>
+    
+    <item>
+      <title>Pylons 入门实例教程 – cookie 和 session</title>
+      <link>/2010/07/03/pylons-tutorial-cookie-session/</link>
+      <pubDate>Sat, 03 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/07/03/pylons-tutorial-cookie-session/</guid>
+      <description>本篇讲述在 Pylons 里使用 cookie 和 session。</description>
+    </item>
+    
+    <item>
+      <title>Pylons 入门实例教程 – 数据库操作</title>
+      <link>/2010/07/01/pylons-tutorial-database/</link>
+      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/07/01/pylons-tutorial-database/</guid>
+      <description>前面两篇入门，讲述了 Pylons 大致开发的流程、表单以及文件上传，思路大致跟传统的开发类似。本篇简单讲述下在 Pylons 如何使用数据库。</description>
+    </item>
+    
+    <item>
+      <title>Pylons 入门实例教程 – 表单和文件上传</title>
+      <link>/2010/06/30/pylons-tutorial-form-upload-file/</link>
+      <pubDate>Wed, 30 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/06/30/pylons-tutorial-form-upload-file/</guid>
+      <description>继续上一篇《Pylons 入门实例教程 - Hello》，现在开始讲在 Pylons 里如何提交表单和上传文件。</description>
+    </item>
+    
+    <item>
+      <title>如何写 Go 代码？</title>
+      <link>/2010/06/29/how-to-write-go/</link>
+      <pubDate>Tue, 29 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/06/29/how-to-write-go/</guid>
+      <description>原文：http://golang.org/doc/code.html
+简述</description>
+    </item>
+    
+    <item>
+      <title>Pylons 入门实例教程 - Hello</title>
+      <link>/2010/06/28/pylons-tutorial-hello/</link>
+      <pubDate>Mon, 28 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/06/28/pylons-tutorial-hello/</guid>
+      <description>http://pylonshq.com/，当然，这些组件只是默认，你还可以根据自己喜好来选择其他组件，比如你可以采用 Jinja2 或 Genshi 模板，ORM也可以采用 SQLObject。完全是自由组合。</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL COPY 导入/导出数据</title>
+      <link>/2010/06/02/postgresql-copy-dump-store/</link>
+      <pubDate>Wed, 02 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/06/02/postgresql-copy-dump-store/</guid>
+      <description>COPY 命令可以快速的导入数据到 PostgreSQL 中，文件格式类似CVS之类。适合批量导入数据，比 \i 和恢复数据表快。</description>
+    </item>
+    
+    <item>
+      <title>Cython 教程 - 调用外部C语言函数</title>
+      <link>/2010/05/30/cython-extern-c/</link>
+      <pubDate>Sun, 30 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/05/30/cython-extern-c/</guid>
+      <description>一般情况完全可以在 Python 里导入 from math import sin 然后调用 sin() 函数。然而，调用C里面的 sin() 函数速度会更快，尤其在复杂的循环里。在 Cython 里可以这样声明和使用：</description>
+    </item>
+    
+    <item>
+      <title>Go 语言模块安装工具：goinstall</title>
+      <link>/2010/05/30/goinstall/</link>
+      <pubDate>Sun, 30 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/05/30/goinstall/</guid>
+      <description>文档地址：http://golang.org/cmd/goinstall/</description>
+    </item>
+    
+    <item>
+      <title>[图文解说] Virtual Box 通过 NAT(默认) 共享虚拟机中的服务</title>
+      <link>/2010/05/10/virtualbox-nat-share/</link>
+      <pubDate>Mon, 10 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/05/10/virtualbox-nat-share/</guid>
+      <description>Virtual Box 是个不错的虚拟机，小巧，功能也齐全。好像有点推销鸟。说正题，上次有个朋友就提到怎么能主机里访问虚拟机里的服务，昨晚实验了下，颇为顺利。记录下。这里利用的是默认的NAT上网，也就是共享主机上网，而不是设置独立的IP。</description>
+    </item>
+    
+    <item>
+      <title>【译】MongoDB 入门教程</title>
+      <link>/2010/04/27/mongodb-tutorail/</link>
+      <pubDate>Tue, 27 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/04/27/mongodb-tutorail/</guid>
+      <description>原文参见：http://www.mongodb.org/display/DOCS/Tutorial
+启动数据库</description>
+    </item>
+    
+    <item>
+      <title>Python ConfigParser 与 ConfigObj INI 配置读写顺序</title>
+      <link>/2010/04/19/python-configparser-configobj/</link>
+      <pubDate>Mon, 19 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/04/19/python-configparser-configobj/</guid>
+      <description>默认的ConfigParser对于选项是按照字母顺序排列的。如下代码：
+&amp;gt;&amp;gt;&amp;gt; from ConfigParser import ConfigParser &amp;gt;&amp;gt;&amp;gt; cf = ConfigParser() &amp;gt;&amp;gt;&amp;gt; cf.</description>
+    </item>
+    
+    <item>
+      <title>梦想与坚持</title>
+      <link>/2010/04/08/my-dream/</link>
+      <pubDate>Thu, 08 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/04/08/my-dream/</guid>
+      <description>经过几天的适应总算在杭州安定下来了，回归到简单而快乐的上班生活轨道上。
+夜深人静的时侯才能静下心来写点关于自己的话题，不再浮躁。</description>
+    </item>
+    
+    <item>
+      <title>Nginx 启动/重启脚本笔记</title>
+      <link>/2010/03/27/nginx-setup-config/</link>
+      <pubDate>Sat, 27 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/03/27/nginx-setup-config/</guid>
+      <description>Nginx本身可以通过
+kill -HUP `cat /usr/local/nginx/logs/nginx.</description>
+    </item>
+    
+    <item>
+      <title>web.py 数据库操作指南</title>
+      <link>/2010/03/19/webpy-database-tutorial/</link>
+      <pubDate>Fri, 19 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/03/19/webpy-database-tutorial/</guid>
+      <description>官网地址：http://webpy.org/
+web.py是一个小巧灵活的框架，最新稳定版是0.33。这里不介绍web开发部分，介绍下关于数据库的相关操作。</description>
+    </item>
+    
+    <item>
+      <title>Python(Stackless) &#43; MongoDB Apache 日志(2G)分析</title>
+      <link>/2010/03/04/python-stackless-mongodb-apache-log/</link>
+      <pubDate>Thu, 04 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/03/04/python-stackless-mongodb-apache-log/</guid>
+      <description>为何选择Stackless？ http://www.stackless.com</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL UUID 函数</title>
+      <link>/2010/02/26/postgresql-uuid/</link>
+      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/02/26/postgresql-uuid/</guid>
+      <description>测试环境：PostgreSQL 8.4</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL RPM 安装笔记</title>
+      <link>/2010/02/06/postgresql-rpm-setup/</link>
+      <pubDate>Sat, 06 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/02/06/postgresql-rpm-setup/</guid>
+      <description>测试环境：REHL 5.3 PostgreSQL版本：8.</description>
+    </item>
+    
+    <item>
+      <title>MySQL/PostgreSQL小命令对比</title>
+      <link>/2010/02/05/mysql-postgresql-command/</link>
+      <pubDate>Fri, 05 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/2010/02/05/mysql-postgresql-command/</guid>
+      <description>对比下一些两个数据库常用的操作。分别使用自带的client程序。
+MySQL命令行：</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL Partitioning 表分区</title>
+      <link>/2009/12/22/postgresql-partitioning/</link>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/22/postgresql-partitioning/</guid>
+      <description>测试版本：pg 8.3 (ubuntu)</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL tablespace 表空间</title>
+      <link>/2009/12/22/postgresql-tablespace/</link>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/22/postgresql-tablespace/</guid>
+      <description>pgsql允许管理员在文件系统里定义表空间存储位置，这样创建数据库对象时候就可以引用这个表空间了。好处就不用多说了，可以把数据库对象存储到不同的分区上，比如更好的存储之类。默认initdb之后会有两个表空间pg_global和pg_default。
+查看pgsql当前表空间有哪些可以试试下面：</description>
+    </item>
+    
+    <item>
+      <title>C Apache Module 开发入门</title>
+      <link>/2009/12/16/hello-c-apache-module/</link>
+      <pubDate>Wed, 16 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/16/hello-c-apache-module/</guid>
+      <description>前言：
+扩展Apache模块开发网上大部分教程都是围绕Perl语言，老外的《Writing Apache Modules with Perl and C》可以算是经典之作了，可惜一直都是针对老版本开发，而且主力语言是Perl，C语言部分只是略有介绍。不过相比较而言用Perl来扩展模块功能确实比 C语言来的快速以及便捷多了，也简单容易。我自己也在工作里应用了一部分，主要是在防盗链上面写了两个简单都模块，可以参考我写的另外两篇文章：http://chenxiaoyu.</description>
+    </item>
+    
+    <item>
+      <title>Java调用Linux SCP操作</title>
+      <link>/2009/12/16/use-java-for-linux-scp/</link>
+      <pubDate>Wed, 16 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/16/use-java-for-linux-scp/</guid>
+      <description>先来回顾下linux下scp命令的用法：
+[shell $] scp -r /本地目录或文件 user@192.</description>
+    </item>
+    
+    <item>
+      <title>SSH, SCP 不输入密码</title>
+      <link>/2009/12/16/ssh-scp-use-none-password/</link>
+      <pubDate>Wed, 16 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/16/ssh-scp-use-none-password/</guid>
+      <description>经常在不同linux机器之间互相scp拷文件，每次总是要输入密码才可行。
+通过ssh-keygen生成公钥，在两台机器之间互相建立信任通道即可。假设本地机器client，远程机器为server。</description>
+    </item>
+    
+    <item>
+      <title>修改 ModPython 下 PYTHON_EGG_CACHE 报错</title>
+      <link>/2009/12/16/modpython-python_egg_cache-error/</link>
+      <pubDate>Wed, 16 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/16/modpython-python_egg_cache-error/</guid>
+      <description>环境：Linux Apache Python(mod_python)</description>
+    </item>
+    
+    <item>
+      <title>Apache Mod_Perl 防盗链</title>
+      <link>/2009/12/15/apache-mod-perl-check-url/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/15/apache-mod-perl-check-url/</guid>
+      <description>大体思路是这样的，比如有 一个地址：http://www.aa.com/down/1.mp3，不幸搜索引擎或者迅雷扒到了，就无偿为他们奉献流量了。 但是假如在http://www.</description>
+    </item>
+    
+    <item>
+      <title>Apache Mod_Perl实现 URL Rewrite</title>
+      <link>/2009/12/15/apache-mod-perl-urlrewrite/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/15/apache-mod-perl-urlrewrite/</guid>
+      <description>相信apache的mod_rewrite模块都很熟悉了，今天这儿换个思路，利用mod_perl来实现下，发现竟然是如此的简单！
+首先得保证apache已经安装了mod_perl模块，具体安装配置可以看上一篇文章哦。</description>
+    </item>
+    
+    <item>
+      <title>Apache 虚拟主机配置笔记</title>
+      <link>/2009/12/15/apache-vhost-config/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/15/apache-vhost-config/</guid>
+      <description>环境：Linux Apache2.2 （路径 /usr/local/apache）</description>
+    </item>
+    
+    <item>
+      <title>Memcached Java/Python Client API 共享</title>
+      <link>/2009/12/15/memcached-java-python-client-share/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/15/memcached-java-python-client-share/</guid>
+      <description>用Python写了一个计划任务，定时更新Memcached中一个key值，写的很happy，几分钟搞定。
+然后在Java Servlet测试，代码写的也很happy，编译 - 刷新，一气呵成。</description>
+    </item>
+    
+    <item>
+      <title>mysqldumpslow 慢查询日志分析工具</title>
+      <link>/2009/12/15/use-mysqldumpslow/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/15/use-mysqldumpslow/</guid>
+      <description>mysql自带的这个玩意挺好使的，可以对慢查询里的sql进行排序、计算等操作。
+首先得配置my.cnf：</description>
+    </item>
+    
+    <item>
+      <title>Perl 批量跳过 MySQL Slave 复制错误</title>
+      <link>/2009/12/15/use-perl-skip-mysql-slave-error/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/15/use-perl-skip-mysql-slave-error/</guid>
+      <description>发现mysql slave服务器经常因为一些特殊字符或者符号产生的更新语句报错，整个同步也会因此而卡在那，最初的办法只是手动去出错的机器，执行下面三条sql语句，跳过错误即可。</description>
+    </item>
+    
+    <item>
+      <title>Pexpect通过SSH执行远程命令</title>
+      <link>/2009/12/15/use-pexpect-for-ssh-remote/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/15/use-pexpect-for-ssh-remote/</guid>
+      <description>pexpect是python一个模块，可以通过：easy_install pexpect 来安装。</description>
+    </item>
+    
+    <item>
+      <title>SSH Tunnel Memcached</title>
+      <link>/2009/12/15/ssh-tunnel-for-memcached/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/15/ssh-tunnel-for-memcached/</guid>
+      <description>最近一台服务器放进了移动机房，需要访问原电信机房一台Memcached服务器，Memcached服务是以内网形式启动。
+依靠google大神，搜索出解决思路，在本地起一个SSH链接，通过本地一个端口实现对另外机器的映射或者叫做转发。</description>
+    </item>
+    
+    <item>
+      <title>使用 Perl 快速解析 Apache Log</title>
+      <link>/2009/12/15/use-perl-parse-apache-log/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/15/use-perl-parse-apache-log/</guid>
+      <description>功能简述
+统计出日志里一个或多个页面总共访问的次数，比如aa.jsp, bb.</description>
+    </item>
+    
+    <item>
+      <title>emacs windows配置笔记</title>
+      <link>/2009/12/10/emacs-windows-config/</link>
+      <pubDate>Thu, 10 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/10/emacs-windows-config/</guid>
+      <description>俺最新.emcas配置地址是：http://github.com/smallfish/editor/blob/master/emacs/.emacs
+最近手痒，看到不少牛x人物都是用emacs，遂在windows下装一个玩玩。</description>
+    </item>
+    
+    <item>
+      <title>使用Git维护你的网站</title>
+      <link>/2009/12/08/use-git-for-web/</link>
+      <pubDate>Tue, 08 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/08/use-git-for-web/</guid>
+      <description>简介</description>
+    </item>
+    
+    <item>
+      <title>tornado.database添加PooledDB连接池功能</title>
+      <link>/2009/12/01/python-tornado-dbutil/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/12/01/python-tornado-dbutil/</guid>
+      <description>tornado.database模块简单包装了下对MySQL的操作，短小精悍。
+无奈源码中无连接池功能，遂加上了一段DBUtils模块功能。</description>
+    </item>
+    
+    <item>
+      <title>Pysvn 程序员指南</title>
+      <link>/2009/11/20/pysvn-tutorial/</link>
+      <pubDate>Fri, 20 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/11/20/pysvn-tutorial/</guid>
+      <description>这是一篇关于pysvn模块的指南.
+完整和详细的API请参考 http://pysvn.</description>
+    </item>
+    
+    <item>
+      <title>Cython参考指南 - 编译</title>
+      <link>/2009/11/19/cython-compile/</link>
+      <pubDate>Thu, 19 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/11/19/cython-compile/</guid>
+      <description>Cython代码跟Python不一样，必须要编译。
+编译经过两个阶段：</description>
+    </item>
+    
+    <item>
+      <title>Win Python Pyrex 扩展</title>
+      <link>/2009/11/17/python-pyrex-for-win/</link>
+      <pubDate>Tue, 17 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/11/17/python-pyrex-for-win/</guid>
+      <description>在偶的ubuntu里编写pyrex程序编译成so还是挺爽的，用 timeit.Timer 测试性能提升不少，今天在windows也尝试了一番。</description>
+    </item>
+    
+    <item>
+      <title>MySQL Query Profile 简单使用</title>
+      <link>/2009/11/16/mysql-query-profile/</link>
+      <pubDate>Mon, 16 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/11/16/mysql-query-profile/</guid>
+      <description>MySQL Query Profile MySQL 5.</description>
+    </item>
+    
+    <item>
+      <title>Google App Engine 上试用 web.py 笔记</title>
+      <link>/2009/11/10/google-appengine-webpy/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/11/10/google-appengine-webpy/</guid>
+      <description>看到有人在坛子里询问在GAE如何发布web.py有关问题，就尝试了一把。具体安装和使用过程如下，请对照自己本地路径相应修改：
+复制本地对应web.py目录到GAE对应应用目录 比如：D:\Python25\Lib\site-packages\web 到 e:\googleapp\pynotes</description>
+    </item>
+    
+    <item>
+      <title>Python Mako Template 学习笔记</title>
+      <link>/2009/11/10/python-mako-template/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/11/10/python-mako-template/</guid>
+      <description>Mako是什么？Moko是Python写的一个模板库，Python官网http://python.org/用的就是它哦。其他废话也就不累赘了，直接来点代码，方便阅读与了解把。
+(Mako官网地址：http://www.makotemplates.org/ ，可以下载安装包，推荐使用easy_install安装)</description>
+    </item>
+    
+    <item>
+      <title>Python MySQL 库安装笔记</title>
+      <link>/2009/11/10/python-mysql-install/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/11/10/python-mysql-install/</guid>
+      <description>其实MySQL-python安装很简直，以前一直也没在意，今天发觉换了1.2.3新版本，ms蹦出很多问题来了。 做个记录，防止以后有问题无处可查。</description>
+    </item>
+    
+    <item>
+      <title>Python MySQLdb 查询返回字典结构</title>
+      <link>/2009/11/10/python-mysqldb-return-dict/</link>
+      <pubDate>Tue, 10 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/2009/11/10/python-mysqldb-return-dict/</guid>
+      <description>MySQLdb默认查询结果都是返回tuple，输出时候不是很方便，必须按照0，1这样读取，无意中在网上找到简单的修改方法，就是传递一个cursors.DictCursor就行。
+默认程序：</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>About </description>
+    </item>
+    
+  </channel>
+</rss>

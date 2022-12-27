@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>supervisord on blog // smallfish</title>
+    <link>/tags/supervisord/</link>
+    <description>Recent content in supervisord on blog // smallfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 12 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="/tags/supervisord/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker supervisord 管理多进程的一些建议</title>
+      <link>/2017/12/12/docker-supervisord-tips/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/12/docker-supervisord-tips/</guid>
+      <description>上一次提到 supervisord 还是 2011 年 python supervisor 这里再补充一篇，基本上是这几年在 docker 里面的一些用法和建议。在容器里面是不太建议里面跑多个进程（服务）的玩法，但是有的时候实际业务在所难免</description>
+    </item>
+    
+  </channel>
+</rss>

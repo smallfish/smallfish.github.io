@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on blog // smallfish</title>
+    <link>/tags/golang/</link>
+    <description>Recent content in golang on blog // smallfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 17 Jan 2015 00:00:00 +0000</lastBuildDate><atom:link href="/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go flag/kingpin 命令行解析多个同名参数</title>
+      <link>/2015/01/17/go-flag-multiple-values/</link>
+      <pubDate>Sat, 17 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/01/17/go-flag-multiple-values/</guid>
+      <description>想了半天标题应该怎么写，都不太好表达，要的效果如下：
+xx --name=aa --name=bb 需要解析出 name 参数，默认 flag 解析后返回的是最后一个值，即：bb</description>
+    </item>
+    
+  </channel>
+</rss>

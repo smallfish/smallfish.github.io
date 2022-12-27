@@ -1,0 +1,45 @@
+#baseURL = "https://chenxiaoyu.org"
+languageCode = "zh-CN"
+title = "blog // smallfish"
+theme = "hugo-theme-noteworthy"
+enableRobotsTXT = true
+paginate = 10
+summaryLength = 2
+
+[permalinks]
+posts = "/:year/:month/:day/:filename/"
+
+[taxonomies]
+  tag = "tags"
+
+[author]
+    name = "smallfish"
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+    math = true
+    description = ""
+    showReadMore = false
+    github = "https://github.com/smallfish"
+    twitter = "https://twitter.com/smallfishxy"
+
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+[[menu.main]]
+    name = "Archives"
+    identifier = "archives"
+    url = "/archives/"
+    weight = 3
+

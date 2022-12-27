@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wrk on blog // smallfish</title>
+    <link>/tags/wrk/</link>
+    <description>Recent content in wrk on blog // smallfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 18 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/wrk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wrk 使用</title>
+      <link>/2018/01/18/wrk-tips/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/18/wrk-tips/</guid>
+      <description>wrk 使用小记，备忘用</description>
+    </item>
+    
+  </channel>
+</rss>

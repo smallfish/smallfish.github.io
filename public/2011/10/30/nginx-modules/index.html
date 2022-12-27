@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Nginx 第三方模块试用记 | blog // smallfish</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.e34415025514319010e741089e6920454053855755ba465f66943ad102d2cb08.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    </head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="/">blog // smallfish</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="/about/">About</a>
+  
+    <a class="color-link nav-link" href="/tags/">Tags</a>
+  
+    <a class="color-link nav-link" href="/archives/">Archives</a>
+  
+  <a class="color-link nav-link" href="/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+    <a class="social-icon" href="https://twitter.com/smallfishxy" target="_blank" rel="noopener" title="Twitter">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M8.991284,24.971612 C19.180436,24.971612 24.752372,16.530224 24.752372,9.210524 C24.752372,8.970656 24.747512,8.731868 24.736496,8.494376 C25.818008,7.712564 26.758256,6.737 27.5,5.62622 C26.507372,6.067076 25.439252,6.364292 24.318752,6.498212 C25.462472,5.812628 26.340512,4.727444 26.754584,3.434036 C25.684088,4.068536 24.499004,4.53002 23.23724,4.778528 C22.226468,3.701876 20.786828,3.028388 19.193828,3.028388 C16.134404,3.028388 13.653536,5.509256 13.653536,8.567492 C13.653536,9.0023 13.702244,9.424904 13.797176,9.830552 C9.19346,9.599108 5.11106,7.39472 2.3792,4.04294 C1.903028,4.861364 1.629032,5.812628 1.629032,6.827072 C1.629032,8.74904 2.606972,10.445612 4.094024,11.438132 C3.185528,11.41016 2.331788,11.160464 1.585184,10.745096 C1.583888,10.768208 1.583888,10.791428 1.583888,10.815728 C1.583888,13.49888 3.493652,15.738584 6.028088,16.246508 C5.562932,16.373084 5.07326,16.44134 4.56782,16.44134 C4.210988,16.44134 3.863876,16.406024 3.526484,16.34144 C4.231724,18.542264 6.276596,20.143796 8.701412,20.18894 C6.805148,21.674696 4.416836,22.56008 1.821488,22.56008 C1.374476,22.56008 0.93362,22.534592 0.5,22.4834 C2.951708,24.054476 5.862524,24.971612 8.991284,24.971612"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <a class="social-icon" href="https://github.com/smallfish" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+    <p><a href="https://github.com/kimcc/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+    <p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+
+	<script src="/js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+</footer>
+
+</nav>
+
+        <div id="content" class="content-container">
+        
+
+<h1 class="post-title">Nginx 第三方模块试用记</h1>
+    
+    <time>2011-10-30</time>
+    
+    <div>
+        <p>
+        <p>最近试用了几个<a href="http://weibo.com/agentzh">@agentzh</a>写的第三方<a href="http://nginx.net">Nginx</a>模块，甚为愉悦，没想到在Nginx可以玩很多技巧和扩展，分享一下。</p>
+<p>本文尝试的几个模块大概分为：</p>
+<ul>
+<li>echo</li>
+<li>memcached</li>
+<li>nginx</li>
+<li>lua</li>
+</ul>
+<p>详细模块地址分别为：</p>
+<ul>
+<li>ngx_devel_kit <a href="https://github.com/simpl/ngx_devel_kit">https://github.com/simpl/ngx_devel_kit</a></li>
+<li>set-misc-nginx-module <a href="https://github.com/agentzh/set-misc-nginx-module">https://github.com/agentzh/set-misc-nginx-module</a></li>
+<li>memc-nginx-module <a href="https://github.com/agentzh/memc-nginx-module">https://github.com/agentzh/memc-nginx-module</a></li>
+<li>echo-nginx-module <a href="https://github.com/agentzh/echo-nginx-module">https://github.com/agentzh/echo-nginx-module</a></li>
+<li>lua-nginx-module <a href="https://github.com/chaoslawful/lua-nginx-module">https://github.com/chaoslawful/lua-nginx-module</a></li>
+<li>srcache-nginx-module <a href="https://github.com/agentzh/srcache-nginx-module">https://github.com/agentzh/srcache-nginx-module</a></li>
+<li>drizzle-nginx-module <a href="https://github.com/chaoslawful/drizzle-nginx-module">https://github.com/chaoslawful/drizzle-nginx-module</a></li>
+<li>rds-json-nginx-module <a href="https://github.com/agentzh/rds-json-nginx-module">https://github.com/agentzh/rds-json-nginx-module</a></li>
+</ul>
+<p>为了省事这里一股脑把上面的module全部下载好，一起编译。PS：如果更懒惰的可以尝试下<a href="http://openresty.org">openresty</a>项目，它帮你打包好Nginx和一堆扩展模块，得感谢@agentzh。</p>
+<p>这里编译和drizzle和lua模块，在编译Nginx之前需要设置一下这两个库的LIB和INCLUDE文件地址：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>-- lua --
+</span></span><span style="display:flex;"><span>export LUA_LIB<span style="color:#f92672">=</span>/path/to/lua/lib
+</span></span><span style="display:flex;"><span>export LUA_INC<span style="color:#f92672">=</span>/path/to/lua/include
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>-- drizzle --
+</span></span><span style="display:flex;"><span>export LIBDRIZZLE_INC<span style="color:#f92672">=</span>/opt/drizzle/include/libdrizzle-1.0
+</span></span><span style="display:flex;"><span>export LIBDRIZZLE_LIB<span style="color:#f92672">=</span>/opt/drizzle/lib</span></span></code></pre></div>
+<p>Nginx编译选项如下，请注意先后顺序：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./configure --prefix<span style="color:#f92672">=</span>/opt/nginx <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --with-pcre<span style="color:#f92672">=</span>../pcre <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --add-module<span style="color:#f92672">=</span>../ngx_devel_kit <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --add-module<span style="color:#f92672">=</span>../set-misc-nginx-module <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --add-module<span style="color:#f92672">=</span>../memc-nginx-module <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --add-module<span style="color:#f92672">=</span>../echo-nginx-module <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --add-module<span style="color:#f92672">=</span>../lua-nginx-module <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --add-module<span style="color:#f92672">=</span>../srcache-nginx-module <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --add-module<span style="color:#f92672">=</span>../drizzle-nginx-module <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --add-module<span style="color:#f92672">=</span>../rds-json-nginx-module</span></span></code></pre></div>
+<p>重新编译Nginx二进制，Nginx需要quit再启动。而普通配置更新则reload即可：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. kill -HUP <span style="color:#e6db74">`</span>cat /path/nginx/logs/nginx.pid<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>2. /path/nginx/sbin/nginx -s reload</span></span></code></pre></div>
+<p>PS：详细的模块编译可以参考各自模块的文档说明。</p>
+<p>好吧，假设到这里已经安装和编译好Nginx以及一堆第三方扩展。下面开始尝试上面那些有趣的模块~</p>
+<p><strong>场景1：Helloworld</strong></p>
+<p>程序里helloworld很简单，nginx的hello如何实现呢？</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. 最简单的helloworld
+</span></span><span style="display:flex;"><span>location /hello1 <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;hello 1111!&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2. 异步请求其他echo请求
+</span></span><span style="display:flex;"><span>location /hello2 <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;hello 2222!&#34;</span>;
+</span></span><span style="display:flex;"><span>    echo_location_async /hello1;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>3. 输出GET请求参数，假设参数名是name，这里并对name参数进行解码
+</span></span><span style="display:flex;"><span>location /hello3 <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    set_unescape_uri $name $arg_name;
+</span></span><span style="display:flex;"><span>    set_if_empty $name <span style="color:#e6db74">&#34;None&#34;</span>;
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;hello, </span>$name<span style="color:#e6db74">!&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>是不是很帅气有趣。例2中的subrequest是完全non-blocking的。
+</span></span><span style="display:flex;"><span>echo模块还有timer扩展，页面输出加载时间也是小case了。</span></span></code></pre></div>
+<p><strong>场景2：Memcached HTTP 接口</strong></p>
+<p>想当年哥为了兼容不同语言的api，自己封装了memcached操作，真是挺苦逼的，当时还非常羡慕tokyotyrant的http接口来着，现在用memc模块效果一样，还有upstream和keepalive功能哦~</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>location /memcached <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    set $memc_cmd $arg_cmd;
+</span></span><span style="display:flex;"><span>    set $memc_key $arg_key;
+</span></span><span style="display:flex;"><span>    set $memc_value $arg_val;
+</span></span><span style="display:flex;"><span>    set $memc_exptime $arg_exptime;
+</span></span><span style="display:flex;"><span>    memc_pass 127.0.0.1:11211;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>URL访问类似 http://host:port/memcached?cmd<span style="color:#f92672">=</span>aaa&amp;key<span style="color:#f92672">=</span>bbb&amp;val<span style="color:#f92672">=</span>ccc
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>还需要自己封装么？完全的基于url编程了，不再考虑各自语言的memcached api，cluster也简化了。</span></span></code></pre></div>
+<p><strong>场景3：数据库查询</strong></p>
+<p>这里用了libdrizzle模块，兼容MySQL、Drizzle、SQLite数据库。有时候为了一些查询或者接口，还需要用语言来封装一些数据库查询操作，现在直接通过drizzle模块可以很轻松的做到~~</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 添加MySQL配置</span>
+</span></span><span style="display:flex;"><span>upstream mysql <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    drizzle_server 127.0.0.1:3306 dbname<span style="color:#f92672">=</span>test user<span style="color:#f92672">=</span>smallfish password<span style="color:#f92672">=</span><span style="color:#ae81ff">123</span> protocol<span style="color:#f92672">=</span>mysql;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 通过url匹配出name，并编码防止注入，最后以json格式输出结果。</span>
+</span></span><span style="display:flex;"><span>location ~ <span style="color:#e6db74">&#39;^/mysql/(.*)&#39;</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    set $name $1;
+</span></span><span style="display:flex;"><span>    set_quote_sql_str $quote_name $name;
+</span></span><span style="display:flex;"><span>    set $sql <span style="color:#e6db74">&#34;SELECT * FROM users WHERE name=</span>$quote_name<span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>    drizzle_query $sql;
+</span></span><span style="display:flex;"><span>    drizzle_pass mysql;
+</span></span><span style="display:flex;"><span>    rds_json on;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 查看MySQL服务状态，这个很实用哦。</span>
+</span></span><span style="display:flex;"><span>location /mysql-status <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    drizzle_status;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<p><strong>场景4：lua扩展</strong></p>
+<p>内嵌lua语言，超级牛力哦~~~想干啥都可以了，而且还可以充分发挥lua coroutine的风骚，淘宝量子统计完全是lua扩展。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>location /lua1 <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    default_type <span style="color:#e6db74">&#39;text/plain&#39;</span>;
+</span></span><span style="display:flex;"><span>    content_by_lua <span style="color:#e6db74">&#39;ngx.say(&#34;hello, lua&#34;)&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 请求另外的url</span>
+</span></span><span style="display:flex;"><span>location /lua2 <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    content_by_lua <span style="color:#e6db74">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        local res = ngx.location.capture(&#34;/hello1&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        ngx.say(&#34;data: &#34; .. res.body)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     &#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Lua支持的选项很多，具体可参考官网WIKI文档。</span></span></code></pre></div>
+<p>嗯，这里尝试玩了几个模块，详细的例子可以参考各自的模块文档，里面都有详细的说明和选项配置。</p>
+<p>可以看出和传统编程有些微不同之处，完全是基于URL的HTTP接口，比传统的方式更为简单，更为清晰。还有non-blocking的实现，更见轻便。</p>
+
+        </p>
+    </div>
+    
+
+    
+
+    <div class="page-footer">
+        
+    </div>
+
+
+        
+
+<link rel="stylesheet" type="text/css" href="/css/katex.min.css" crossorigin="anonymous">
+<script type="text/javascript" src="/js/katex.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/auto-render.min.js"onload="renderMathInElement(document.body);" crossorigin="anonymous"></script>
+
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+    <a class="social-icon" href="https://twitter.com/smallfishxy" target="_blank" rel="noopener" title="Twitter">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M8.991284,24.971612 C19.180436,24.971612 24.752372,16.530224 24.752372,9.210524 C24.752372,8.970656 24.747512,8.731868 24.736496,8.494376 C25.818008,7.712564 26.758256,6.737 27.5,5.62622 C26.507372,6.067076 25.439252,6.364292 24.318752,6.498212 C25.462472,5.812628 26.340512,4.727444 26.754584,3.434036 C25.684088,4.068536 24.499004,4.53002 23.23724,4.778528 C22.226468,3.701876 20.786828,3.028388 19.193828,3.028388 C16.134404,3.028388 13.653536,5.509256 13.653536,8.567492 C13.653536,9.0023 13.702244,9.424904 13.797176,9.830552 C9.19346,9.599108 5.11106,7.39472 2.3792,4.04294 C1.903028,4.861364 1.629032,5.812628 1.629032,6.827072 C1.629032,8.74904 2.606972,10.445612 4.094024,11.438132 C3.185528,11.41016 2.331788,11.160464 1.585184,10.745096 C1.583888,10.768208 1.583888,10.791428 1.583888,10.815728 C1.583888,13.49888 3.493652,15.738584 6.028088,16.246508 C5.562932,16.373084 5.07326,16.44134 4.56782,16.44134 C4.210988,16.44134 3.863876,16.406024 3.526484,16.34144 C4.231724,18.542264 6.276596,20.143796 8.701412,20.18894 C6.805148,21.674696 4.416836,22.56008 1.821488,22.56008 C1.374476,22.56008 0.93362,22.534592 0.5,22.4834 C2.951708,24.054476 5.862524,24.971612 8.991284,24.971612"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <a class="social-icon" href="https://github.com/smallfish" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<div class="footer-mobile-links">
+        <p><a href="https://github.com/kimcc/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+		<span class="divider-bar">|</span>
+        <p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+	</div>
+
+	<script src="/js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+</footer>
+
+    </body>
+</html>
