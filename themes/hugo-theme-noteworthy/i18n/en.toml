@@ -14,10 +14,10 @@ other = "Older"
 other = "Tagged"
 
 [read_more]
-other = "Read more..."
+other = "Read more.."
 
 [noteworthy_theme]
-other = "Noteworthy theme"
+other = "Noteworthy theme (with Hugo)"
 
 [built_with_hugo]
-other = "Built with Hugo"
+other = ""
