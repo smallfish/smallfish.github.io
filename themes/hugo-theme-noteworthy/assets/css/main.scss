@@ -12,9 +12,9 @@ $gray-dark: #5F5F5F;
 $highlight: #FFEC5C;
 
 // FONTS
-$serif: "Noto Serif","Segoe UI","Helvetica Neue",Helvetica,Roboto,FreeSans,serif;
-$sans-serif: "Noto Sans","Segoe UI","Helvetica Neue",Helvetica,Roboto,FreeSans,sans-serif;
-$code: Menlo,Monaco,"Courier New",monospace;
+$serif: "Noto Serif", "Segoe UI", "Helvetica Neue", Helvetica, Roboto, FreeSans, serif;
+$sans-serif: "Noto Sans", "Segoe UI", "Helvetica Neue", Helvetica, Roboto, FreeSans, sans-serif;
+$code: Menlo, Monaco, "Courier New", monospace;
 
 /* SASS IMPORT ========================================================================== */
 
@@ -29,9 +29,9 @@ $code: Menlo,Monaco,"Courier New",monospace;
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 html {
@@ -44,7 +44,7 @@ body {
     color: $gray-dark;
     font-family: $sans-serif;
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 0.92rem;
 }
 
 // TEXT
@@ -61,7 +61,7 @@ article .post-footer>a {
 }
 
 h1 {
-    font-size: 1.9em;
+    font-size: 1.8em;
     padding-top: 0.2em;
     margin: 0.5em 0em 0.75em 0em;
     font-family: $serif;
@@ -80,7 +80,7 @@ h6 {
 }
 
 h2 {
-    font-size: 1.25em;
+    font-size: 1.24em;
     line-height: 1.4em;
 
     a {
@@ -102,16 +102,16 @@ h2 {
 h5,
 h6 {
     font-weight: 700;
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 
 h4 {
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 
 h3 {
     font-size: 1.1em;
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 
 p {
@@ -186,9 +186,7 @@ ol {
     padding-left: 2em;
 }
 
-li {
-    line-height: 150%;
-}
+li {}
 
 mark {
     background-color: $highlight;
@@ -206,7 +204,7 @@ blockquote {
 }
 
 cite {
-    font-size: 0.95em;
+    font-size: 0.94em;
 }
 
 pre {
@@ -218,7 +216,7 @@ pre {
 
 p code,
 kbd {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     background: $gray-background;
     padding: 0.2em;
 }
@@ -227,8 +225,8 @@ code,
 pre,
 kbd {
     font-family: $code;
-    font-size: 0.95rem;
-    line-height: 154%;
+    font-size: 0.94rem;
+    line-height: 150%;
 }
 
 .table-wrapper {
@@ -263,7 +261,7 @@ nav {
 
     a {
         font-family: $serif;
-        font-size: 1.5em;
+        font-size: 1.4em;
         text-decoration: none;
         margin-top: 0.75em;
     }
@@ -309,14 +307,14 @@ nav {
     }
 
     p {
-        font-size: 0.95rem;
+        font-size: 0.94rem;
         margin: 0px;
     }
 
     a {
         text-decoration: none;
         color: $teal;
-        font-size: 0.95rem;
+        font-size: 0.94rem;
     }
 }
 
@@ -353,7 +351,7 @@ a.footnote-ref {
 
 .emojify {
     font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     vertical-align: middle;
 }
 
@@ -368,7 +366,7 @@ a.footnote-ref {
     padding-left: 1.3em !important;
 
     p {
-        font-size: 1.1em;
+        font-size: 1.0em;
         font-style: normal;
         margin-bottom: 1em;
         line-height: 155%;
@@ -387,7 +385,7 @@ a.footnote-ref {
 
 .__h_instagram.card {
     font-family: $sans-serif !important;
-    font-size: 1.1em !important;
+    font-size: 1.0em !important;
     border: 1px solid $gray-light;
     margin-top: 1.2em !important;
 }
@@ -398,7 +396,7 @@ a.footnote-ref {
 }
 
 .post-footer {
-    font-size: 0.95rem;
+    font-size: 0.94rem;
     color: $gray-light;
     border-bottom: 1px solid $gray-lightest;
     padding-bottom: 1.8em;
@@ -411,7 +409,7 @@ a.footnote-ref {
 
 .page-footer {
     padding: 1.5em 0em 2em 0em;
-    font-size: 0.95rem;
+    font-size: 0.94rem;
     color: $gray-light;
 
     a {
@@ -436,7 +434,7 @@ a.footnote-ref {
 }
 
 .archives-list-item-date {
-    width: 60px;
+    width: 100px;
     margin-right: 0.25em;
     color: $gray-light;
 }
@@ -490,7 +488,7 @@ footer {
 
     a {
         text-decoration: none;
-        font-size: 0.95rem;
+        font-size: 0.94rem;
         color: $gray-light;
     }
 

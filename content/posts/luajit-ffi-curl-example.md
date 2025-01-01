@@ -4,7 +4,6 @@ title: LuaJIT FFI 调用 Curl 示例
 
 tags:
 - Lua
-- LuaJIT
 
 ---
 [LuaJIT](http://luajit.org) 是一个好东西，比官方 [Lua](http://lua.org) 解释器性能上提升很多。ngx_lua/[ngx_openresty](http://openresty.org) 都推荐用 LuaJIT 来加速 Lua 代码。
