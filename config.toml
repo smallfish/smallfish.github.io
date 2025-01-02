@@ -3,7 +3,7 @@ languageCode = "zh-CN"
 title = "blog // smallfish"
 theme = "hugo-theme-noteworthy"
 enableRobotsTXT = true
-paginate = 5
+pageSize = 5
 summaryLength = 2
 
 [permalinks]
@@ -42,3 +42,7 @@ name = "Archives"
 identifier = "archives"
 url = "/archives/"
 weight = 3
+
+[services]
+[services.disqus]
+shortname = 'smallfish'
