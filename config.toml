@@ -43,6 +43,6 @@ identifier = "archives"
 url = "/archives/"
 weight = 3
 
-[services]
-[services.disqus]
-shortname = 'smallfish'
+#[services]
+#[services.disqus]
+#shortname = 'smallfish'
