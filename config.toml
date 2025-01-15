@@ -46,3 +46,8 @@ weight = 3
 #[services]
 #[services.disqus]
 #shortname = 'smallfish'
+
+[module]
+[[module.mounts]]
+source = "static"
+target = "static/static"
