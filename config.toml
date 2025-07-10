@@ -20,7 +20,7 @@ unsafe = true
 
 [params]
 math = true
-description = "> ..."
+description = ":)"
 showReadMore = false
 github = "https://github.com/smallfish"
 twitter = "https://twitter.com/smallfishxy"
@@ -42,6 +42,12 @@ name = "Archives"
 identifier = "archives"
 url = "/archives/"
 weight = 3
+
+[[menu.main]]
+identifier = "Running"
+name = "Running Page"
+url = "https://smallfish-running-page.vercel.app"
+weight = 4
 
 #[services]
 #[services.disqus]
