@@ -5,6 +5,7 @@ theme = "hugo-theme-noteworthy"
 enableRobotsTXT = true
 pageSize = 5
 summaryLength = 2
+googleAnalytics = "G-1BEK5XK0XV"
 
 [permalinks]
 posts = "/:year/:month/:day/:filename/"
