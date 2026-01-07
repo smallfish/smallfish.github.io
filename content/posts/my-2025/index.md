@@ -57,10 +57,10 @@ tags:
 
 | 名称                                                                                                                    | 功能                                                               |
 | :---------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------- |
-| [RUN+AI (Chrome 插件)](https://chromewebstore.google.com/detail/run+ai-by-smallfish/cldnfoolbjbphdmdlfmcdhlcmemjkagb)   | 一键提取跑步数据提交 AI: 快速获取 **<u>彩虹夸夸</u>** 省去手工复制 |
+| [RUN+AI (Chrome 插件)](https://chromewebstore.google.com/detail/run+ai-by-smallfish/dmknkjaamipakedcdjhbnnfjpgbpkakh)   | 一键提取跑步数据提交 AI: 快速获取 **<u>彩虹夸夸</u>** 省去手工复制 |
 | [AQI (vscode-aqi)](https://marketplace.visualstudio.com/items?itemName=smallfish.vscode-aqi)                            | 状态栏显示空气质量: 给今天 “跑步否” 加个念想                       |
 | [Switch Proxy (vscode-switch-proxy)](https://marketplace.visualstudio.com/items?itemName=smallfish.vscode-switch-proxy) | 状态栏开关: 省得每次手改 settings 配置                             |
 
---
+.
 
 年初上架的 iOS 应用: ~~HappyCheers~~ 停更 (备案问题) 本地留个念想吧..
